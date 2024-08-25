@@ -1,0 +1,418 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-23T16:30:15.307Z",
+        "line": 4,
+        "name": "Generate the token to be used in future",
+        "description": "",
+        "id": "creating-booking-feature-file;generate-the-token-to-be-used-in-future",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4988615600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I generate a token",
+            "match": {
+              "location": "StepDefinitions.generateTokenSD.user_set_get_example_endpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3002400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should get a token",
+            "match": {
+              "location": "StepDefinitions.generateTokenSD.iShouldGetAToken()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NAGP"
+          }
+        ]
+      }
+    ],
+    "name": "Creating Booking Feature File",
+    "description": "",
+    "id": "creating-booking-feature-file",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/01_Generate_Token.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-23T16:30:20.336Z",
+        "line": 4,
+        "name": "Post Request to create a booking",
+        "description": "",
+        "id": "creating-booking-feature-file;post-request-to-create-a-booking",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2006500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user validates the token is generated",
+            "match": {
+              "location": "StepDefinitions.CreateBookingSD.userValidatesTheTokenIsGenerated()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2438280500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user sends a POST request to create a booking",
+            "match": {
+              "location": "StepDefinitions.CreateBookingSD.userSendsAPOSTRequestToCreateABooking()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should get the booking id",
+            "match": {
+              "location": "StepDefinitions.CreateBookingSD.userShouldGetTheBookingId()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user validate the response generated",
+            "match": {
+              "location": "StepDefinitions.CreateBookingSD.userValidateTheResponseGenerated()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NAGP"
+          }
+        ]
+      }
+    ],
+    "name": "Creating Booking Feature File",
+    "description": "",
+    "id": "creating-booking-feature-file",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/02_Create_Booking.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-23T16:30:22.787Z",
+        "line": 4,
+        "name": "GET Request to fetch created booking",
+        "description": "",
+        "id": "fetching-created-booking-feature-file;get-request-to-fetch-created-booking",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 998800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user validates the token is generated",
+            "match": {
+              "location": "StepDefinitions.CreateBookingSD.userValidatesTheTokenIsGenerated()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2039893800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user performs GET request to fetch created booking ids",
+            "match": {
+              "location": "StepDefinitions.FetchCreatedBookingSD.userPerformsGETRequestToFetchCreatedBooking()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61717000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user validates the booking created in previous step in the response",
+            "match": {
+              "location": "StepDefinitions.FetchCreatedBookingSD.userValidatesTheBookingCreatedInPreviousStepInTheResponse()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NAGP"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-23T16:30:24.898Z",
+        "line": 10,
+        "name": "Get Request to fetch booking details for particular booking id",
+        "description": "",
+        "id": "fetching-created-booking-feature-file;get-request-to-fetch-booking-details-for-particular-booking-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1988800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user validates the token is generated",
+            "match": {
+              "location": "StepDefinitions.CreateBookingSD.userValidatesTheTokenIsGenerated()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1479623000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user performs GET request to fetch booking details for specific booking id",
+            "match": {
+              "location": "StepDefinitions.FetchCreatedBookingSD.userPerformsGETRequestToFetchBookingDetailsForSpecificBookingId()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 75783100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user validates the booking details in the response",
+            "match": {
+              "location": "StepDefinitions.FetchCreatedBookingSD.userValidatesTheBookingDetailsInTheResponse()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NAGP"
+          }
+        ]
+      }
+    ],
+    "name": "Fetching created Booking Feature File",
+    "description": "",
+    "id": "fetching-created-booking-feature-file",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/03_Get_Created_Booking.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-23T16:30:26.461Z",
+        "line": 4,
+        "name": "PUT Request to update the created booking",
+        "description": "",
+        "id": "updating-the-created-booking.;put-request-to-update-the-created-booking",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2160000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user validates the token is generated",
+            "match": {
+              "location": "StepDefinitions.CreateBookingSD.userValidatesTheTokenIsGenerated()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1498466400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user sends a PUT request to update the created booking",
+            "match": {
+              "location": "StepDefinitions.UpdateBookingSD.userSendsAPUTRequestToUpdateTheCreatedBooking()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user validates the booking should be updated successfully",
+            "match": {
+              "location": "StepDefinitions.UpdateBookingSD.userValidatesTheBookingShouldBeUpdatedSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NAGP"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-23T16:30:27.966Z",
+        "line": 10,
+        "name": "Patch request to partially update the created booking",
+        "description": "",
+        "id": "updating-the-created-booking.;patch-request-to-partially-update-the-created-booking",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1975800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user validates the token is generated",
+            "match": {
+              "location": "StepDefinitions.CreateBookingSD.userValidatesTheTokenIsGenerated()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1613041000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user sends a Patch request to partially update the created booking",
+            "match": {
+              "location": "StepDefinitions.UpdateBookingSD.userSendsAPatchRequestToPartiallyUpdateTheCreatedBooking()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user validates the booking should be updated successfully",
+            "match": {
+              "location": "StepDefinitions.UpdateBookingSD.userValidatesTheBookingShouldBeUpdatedSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NAGP"
+          }
+        ]
+      }
+    ],
+    "name": "Updating the created booking.",
+    "description": "",
+    "id": "updating-the-created-booking.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/04_Update_Created_Booking.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-23T16:30:29.588Z",
+        "line": 4,
+        "name": "DELETE Request to delete the created booking",
+        "description": "",
+        "id": "deletion-of-the-created-booking.;delete-request-to-delete-the-created-booking",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2097100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user validates the token is generated",
+            "match": {
+              "location": "StepDefinitions.CreateBookingSD.userValidatesTheTokenIsGenerated()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1631064200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user sends a DELETE request to delete the created booking",
+            "match": {
+              "location": "StepDefinitions.DeleteBookingSD.userSendsADELETERequestToDeleteTheCreatedBooking()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 931981000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user validates the booking should be deleted successfully",
+            "match": {
+              "location": "StepDefinitions.DeleteBookingSD.userValidatesTheBookingShouldBeDeletedSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NAGP"
+          }
+        ]
+      }
+    ],
+    "name": "Deletion of the created booking.",
+    "description": "",
+    "id": "deletion-of-the-created-booking.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/05_Delete_Created_Booking.feature",
+    "tags": []
+  }
+]

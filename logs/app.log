@@ -1,0 +1,19 @@
+2024-06-23 12:30:20 [TestNG-test-Cucumber Tests-1] INFO  StepDefinitions.generateTokenSD - Token: 3ddda62a233e06f
+2024-06-23 12:30:20 [TestNG-test-Cucumber Tests-1] INFO  StepDefinitions.CreateBookingSD - Token validated successfully
+2024-06-23 12:30:22 [TestNG-test-Cucumber Tests-1] INFO  StepDefinitions.CreateBookingSD - Create Booking Response: {"bookingid":4548,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2024-06-23 12:30:22 [TestNG-test-Cucumber Tests-1] INFO  StepDefinitions.CreateBookingSD - Booking ID is: 4548
+2024-06-23 12:30:22 [TestNG-test-Cucumber Tests-1] INFO  StepDefinitions.CreateBookingSD - Create Booking Response validated successfully
+2024-06-23 12:30:22 [TestNG-test-Cucumber Tests-1] INFO  StepDefinitions.CreateBookingSD - Token validated successfully
+2024-06-23 12:30:22 [TestNG-test-Cucumber Tests-1] INFO  StepDefinitions.FetchCreatedBookingSD - Fetching all booking ids
+2024-06-23 12:30:24 [TestNG-test-Cucumber Tests-1] INFO  StepDefinitions.FetchCreatedBookingSD - Total Booking Id Count: 3133
+2024-06-23 12:30:24 [TestNG-test-Cucumber Tests-1] INFO  StepDefinitions.CreateBookingSD - Token validated successfully
+2024-06-23 12:30:24 [TestNG-test-Cucumber Tests-1] INFO  StepDefinitions.FetchCreatedBookingSD - Fetching booking details for the specific booking id
+2024-06-23 12:30:26 [TestNG-test-Cucumber Tests-1] INFO  StepDefinitions.FetchCreatedBookingSD - Response for specific id: {"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+2024-06-23 12:30:26 [TestNG-test-Cucumber Tests-1] INFO  StepDefinitions.CreateBookingSD - Token validated successfully
+2024-06-23 12:30:27 [TestNG-test-Cucumber Tests-1] INFO  StepDefinitions.UpdateBookingSD - Response: {"firstname":"sara","lastname":"Ali khan","totalprice":12122,"depositpaid":false,"bookingdates":{"checkin":"2018-09-12","checkout":"2022-12-12"},"additionalneeds":"Dinner"}
+2024-06-23 12:30:27 [TestNG-test-Cucumber Tests-1] INFO  StepDefinitions.CreateBookingSD - Token validated successfully
+2024-06-23 12:30:29 [TestNG-test-Cucumber Tests-1] INFO  StepDefinitions.UpdateBookingSD - Partial Update Response: {"firstname":"Ms.Sara","lastname":"SR Tendulkar","totalprice":12122,"depositpaid":false,"bookingdates":{"checkin":"2018-09-12","checkout":"2022-12-12"},"additionalneeds":"Dinner"}
+2024-06-23 12:30:29 [TestNG-test-Cucumber Tests-1] INFO  StepDefinitions.CreateBookingSD - Token validated successfully
+2024-06-23 12:30:29 [TestNG-test-Cucumber Tests-1] INFO  StepDefinitions.DeleteBookingSD - Booking ID: 4548
+2024-06-23 12:30:31 [TestNG-test-Cucumber Tests-1] INFO  StepDefinitions.DeleteBookingSD - Response Body: Created
+2024-06-23 12:30:32 [TestNG-test-Cucumber Tests-1] INFO  StepDefinitions.DeleteBookingSD - Response after validating the response: Not Found
