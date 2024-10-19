@@ -16,6 +16,7 @@ import org.testng.annotations.BeforeClass;
                 "json:target/cucumber-reports/cucumber.json",
         }
 )
+
 public class runner extends AbstractTestNGCucumberTests {
 
     @BeforeClass
