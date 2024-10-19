@@ -41,13 +41,13 @@
       <version>6.10.4</version>
     </dependency>
 
-    <!-- TestNG dependencies -->
-    <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>7.4.0</version>
-      <scope>test</scope>
-    </dependency>
+<!--    &lt;!&ndash; TestNG dependencies &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.testng</groupId>-->
+<!--      <artifactId>testng</artifactId>-->
+<!--      <version>7.4.0</version>-->
+<!--      <scope>test</scope>-->
+<!--    </dependency>-->
 
     <!-- POI Excel File Read and Write -->
     <dependency>
@@ -106,8 +106,20 @@
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>7.10.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.10.2</version>
       <scope>compile</scope>
     </dependency>
+    <!--    <dependency>-->
+<!--      <groupId>org.testng</groupId>-->
+<!--      <artifactId>testng</artifactId>-->
+<!--      <version>7.10.2</version>-->
+<!--      <scope>compile</scope>-->
+<!--    </dependency>-->
 
   </dependencies>
 
