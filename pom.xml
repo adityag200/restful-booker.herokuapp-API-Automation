@@ -41,14 +41,6 @@
       <version>6.10.4</version>
     </dependency>
 
-<!--    &lt;!&ndash; TestNG dependencies &ndash;&gt;-->
-<!--    <dependency>-->
-<!--      <groupId>org.testng</groupId>-->
-<!--      <artifactId>testng</artifactId>-->
-<!--      <version>7.4.0</version>-->
-<!--      <scope>test</scope>-->
-<!--    </dependency>-->
-
     <!-- POI Excel File Read and Write -->
     <dependency>
       <groupId>org.apache.poi</groupId>
@@ -88,7 +80,7 @@
       <version>5.0.9</version>
     </dependency>
 
-    <!-- Ensure TestNG is added -->
+    <!-- TestNG (only one version and scope) -->
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
@@ -96,17 +88,12 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- Lombok -->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.28</version> <!-- Latest version as of now -->
+      <version>1.18.28</version>
       <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>7.10.2</version>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.testng</groupId>
@@ -114,17 +101,12 @@
       <version>7.10.2</version>
       <scope>compile</scope>
     </dependency>
-    <!--    <dependency>-->
-<!--      <groupId>org.testng</groupId>-->
-<!--      <artifactId>testng</artifactId>-->
-<!--      <version>7.10.2</version>-->
-<!--      <scope>compile</scope>-->
-<!--    </dependency>-->
 
   </dependencies>
 
   <build>
     <plugins>
+      <!-- Compiler Plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -136,6 +118,20 @@
             <arg>--add-opens</arg>
             <arg>jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED</arg>
           </compilerArgs>
+        </configuration>
+      </plugin>
+
+      <!-- Surefire Plugin to run tests -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.22.2</version>
+        <configuration>
+          <includes>
+            <include>**/*Test.java</include>
+            <include>**/*Tests.java</include>
+            <include>**/*TestCase.java</include>
+          </includes>
         </configuration>
       </plugin>
     </plugins>
